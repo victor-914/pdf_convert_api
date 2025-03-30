@@ -60,7 +60,7 @@ app.get('/convert', (req, res) => {
     const doc = new PDFDocument();
     
     res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', 'attachment; filename=converted.pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename=scopeofwork.pdf');
     
     doc.pipe(res);
     
