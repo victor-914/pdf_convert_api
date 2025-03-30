@@ -28,7 +28,7 @@ app.post('/convert', (req, res) => {
     
     // Set response headers
     res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', 'attachment; filename=converted.pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename=scopeofwork.pdf');
     
     // Pipe the PDF directly to the response
     doc.pipe(res);
